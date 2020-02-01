@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_recommodation"
+        android:icon="@drawable/home"
+        app:showAsAction="always"
+        android:title="Tavsiyalar" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/navigation_sanatorium"
+        android:icon="@drawable/sunset"
+        android:title="Sanatoriyalar" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/navigation_application"
+        android:icon="@drawable/writing"
+        android:title="Ariza" />
+    <item
+        app:showAsAction="always"
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/place"
+        android:title="Xarita" />
+
+</menu>

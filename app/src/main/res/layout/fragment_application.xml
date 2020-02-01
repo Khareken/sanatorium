@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ariza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Ariza"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ariza">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/back_text"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="F.I.Sh"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/back_text"
+                    android:drawableLeft="@drawable/ic_event_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="Kun / Oy / Yil"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/back_text"
+                    android:drawableLeft="@drawable/ic_place_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="Manzil"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/back_text"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="Telefon raqami"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/back_text"
+                    android:drawableLeft="@drawable/ic_work_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="Ish joyi"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back_text"
+                        android:drawableLeft="@drawable/ic_hot_tub_black_24dp"
+                        android:drawablePadding="16dp"
+                        android:drawableTint="#000"
+                        android:editable="false"
+                        android:padding="16dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="48dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back_text"
+                        android:drawableLeft="@drawable/ic_local_hospital_black_24dp"
+                        android:drawablePadding="16dp"
+                        android:drawableTint="#000"
+                        android:editable="false"
+                        android:padding="16dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="48dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/psprt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/passport"
+                app:layout_constraintBottom_toBottomOf="@id/passpordImage"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/copy"
+                app:layout_constraintTop_toTopOf="@id/passpordImage" />
+
+            <TextView
+                android:id="@+id/copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasport nusxasi"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/passpordImage"
+                app:layout_constraintLeft_toRightOf="@id/psprt"
+                app:layout_constraintRight_toLeftOf="@id/passpordImage"
+                app:layout_constraintTop_toTopOf="@id/passpordImage" />
+
+            <uz.micro.star.sihatgoh.tools.RoundRectCornerImageView
+                android:id="@+id/passpordImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/image_back"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toRightOf="@id/copy"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/liner" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/pickImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#CCFFFFFF"
+                android:src="@drawable/ic_folder_open_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/passpordImage"
+                app:layout_constraintLeft_toLeftOf="@id/passpordImage"
+                app:layout_constraintRight_toRightOf="@id/passpordImage"
+                app:layout_constraintTop_toTopOf="@id/passpordImage" />
+
+            <Button
+                android:id="@+id/sendApplication"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="35dp"
+                android:background="@drawable/btn_back"
+                android:text="Arizani yuborish"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passpordImage" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout><!--    app:itemIconTint="#000"-->
+    <!--    app:itemTextColor="#000"-->
